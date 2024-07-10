@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "comfyui"
+version = "0.1.0"
+description = ""
+authors = ["Peter Mason <peter@petermason.me>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.group.dev.dependencies] # Add development dependencies here
+ruff = "^0.5.1"
+
+[tool.poetry.dependencies] # Add package/application dependencies here
+python = "~3.12.4"
+aiohttp = "^3.9.5"
+einops = "^0.8.0"
+kornia = "^0.7.3"
+pillow = "^10.4.0"
+psutil = "^6.0.0"
+pyyaml = "^6.0.1"
+safetensors = "^0.4.3"
+scipy = "^1.14.0"
+soundfile = "^0.12.1"
+spandrel = "^0.3.4"
+torch = { version = "^2.1.1+cu121", source = "torch_source" }
+torchaudio = "^2.3.1"
+torchsde = "^0.2.6"
+torchvision = "^0.18.1"
+tqdm = "^4.66.4"
+transformers = "^4.42.3"
+
+
+[[tool.poetry.source]]
+name = "torch_source"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
