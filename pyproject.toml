@@ -27,6 +27,7 @@ torchsde = "^0.2.6"
 torchvision = "^0.18.1"
 tqdm = "^4.66.4"
 transformers = "^4.42.3"
+tokenizers = "^0.19.1"
 
 
 [[tool.poetry.source]]
