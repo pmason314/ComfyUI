@@ -1,0 +1,41 @@
+[project]
+name = "comfyui"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = { text = "GNU General Public License v3" }
+authors = [
+    { name = "Peter Mason", email = "peter@petermason.me" },
+]
+classifiers = [
+    "GNU General Public License v3: License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Natural Language :: English",
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "aiohttp",
+    "einops",
+    "kornia>=0.7.3",
+    "pillow",
+    "psutil",
+    "pyyaml",
+    "safetensors",
+    "scipy",
+    "sentencepiece",
+    "soundfile>=0.12.1",
+    "spandrel",
+    "tokenizers",
+    "torch>=2.4.0",      # Install via `uv add torch --index-url https://download.pytorch.org/whl/cu121`
+    "torchaudio",
+    "torchsde>=0.2.6",
+    "torchvision",
+    "tqdm",
+    "transformers",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.3",
+]
